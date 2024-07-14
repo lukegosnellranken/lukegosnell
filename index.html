@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <canvas id="canvas1"></canvas>
+  
   <section id="banner">
     <nav class="navbar navbar-expand-lg align-self-start col-12">
       <div class="col-2 d-flex justify-content-center">
         <div class="container-fluid">
           <div class="row">
-            <p class="navbar-brand d-flex justify-content-center mb-0 pb-0">Luke Gosnell</p>
+            <p class="navbar-brand d-flex justify-content-center mb-0 pb-0 text-white">Luke Gosnell</p>
           </div>
           <div class="row">
             <p class="d-flex justify-content-center mt-0 pt-0">Web Dev / QA</p>
@@ -30,13 +32,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Accomplishments</a>
+            <a class="nav-link text-white" href="#">Accomplishments</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,12 +50,12 @@
         </ul>
       </div>
     </nav>
-    <section class="inner d-flex justify-content-center align-items-center">
-      <div class="inner-items d-flex justify-content-center align-items-center">
+    <section class="banner-content d-flex justify-content-center align-items-center">
+      <div class="banner-items d-flex justify-content-center align-items-center">
         <div id="headshot" class="col-5 d-flex justify-content-center">
           <img src="./images/me.png" alt="me">
         </div>
-        <div class="d-flex justify-content-start flex-column  col-7">
+        <div class="d-flex justify-content-start flex-column col-7">
           <header id="header">
             <p class="display-4">Luke Gosnell</p>
           </header>
@@ -68,5 +70,6 @@
     </section>
   </section>
   <p>bootstrap</p>
+  <script src="./js/script.js"></script>
 </body>
 </html>
