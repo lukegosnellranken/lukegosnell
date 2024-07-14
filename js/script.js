@@ -70,7 +70,6 @@ function animate() {
 // resize event
 window.addEventListener('resize',
     function() {
-        console.log('resize');
         canvas.width = this.innerWidth;
         canvas.height = this.innerHeight;
         // init();

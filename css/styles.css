@@ -32,8 +32,16 @@ nav {
     width: 100%;
     color: white;
     text-shadow: 2px 2px #000000;
-    backdrop-filter: blur(4px);
     
+}
+
+#headshot {
+    backdrop-filter: blur(0px);
+}
+
+#banner-text-items {
+    backdrop-filter: blur(4px);
+    width: 75%;
 }
 
 #headshot img{
@@ -55,7 +63,7 @@ nav {
 }
 
 #header-text {
-    width: 75%;
+    /* width: 75%; */
 }
 
 #header-text p {
