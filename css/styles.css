@@ -9,6 +9,14 @@ html {
     height: 100%;
 }
 
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 #canvas1 {
     position: fixed;
     top: 0;
@@ -87,67 +95,39 @@ nav {
         font-size: 150%;
     }
 
-#sect-about {
-    padding-top: 10%;
+#sect-logos {
+    padding-top: 8%;
 }
-
-#about-text {
-    font-size: 150%;
-}
-
-    #main-logo-img {
-        width: 100%;
-        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-    }
-
-    .skill-logo-img{
+    .float-logo-1 {
+        padding-bottom: 8%;
         width: 80px;
         filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+        animation: float 4s ease-out infinite;
     }
 
-    .div-skill-logos {
-        /* transform: translate(0%, 0%);
-        object-fit: cover; */
-    }
-
-    #skill-logo-img-1 {
-        animation: float 6s ease-out infinite;
-        padding-left: 0%;
-        padding-right: 10%;
-    }
-
-    #skill-logo-img-2 {
-        animation: float 6.2s ease-in infinite;
-        padding-left: 10%;
-        padding-right: 0%;
-    }
-
-    #skill-logo-img-3 {
-        animation: float 6.1s ease-out infinite;
-        padding-left: 0%;
-        padding-right: 10%;
-    }
-
-    #skill-logo-img-4 {
-        animation: float 6.5s ease-out infinite;
-        padding-left: 10%;
-        padding-right: 0%;
-    }
-
-    #skill-logo-img-5 {
-        animation: float 6s ease-in infinite;
-        padding-left: 0%;
-        padding-right: 10%;
-    }
-
-    #skill-logo-img-6 {
-        animation: float 6.2s ease-out infinite;
-        padding-left: 10%;
-        padding-right: 0%;
+    .float-logo-2 {
+        padding-bottom: 8%;
+        width: 80px;
+        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+        animation: float 4.5s ease-out infinite;
     }
 
     @keyframes float{
         50% {
-            transform: translateY(5px);
+            transform: translateY(10px);
         }
+    }
+
+#sect-about {
+    
+}
+    
+    #about-text p{
+        font-size: 150%;
+        width: 80%;
+    }
+    
+    #main-logo-img {
+        width: 50%;
+        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
     }
