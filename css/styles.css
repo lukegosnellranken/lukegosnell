@@ -111,27 +111,39 @@ nav {
     }
 
     #skill-logo-img-1 {
-        animation: float 4s ease-out infinite;
+        animation: float 6s ease-out infinite;
+        padding-left: 0%;
+        padding-right: 10%;
     }
 
     #skill-logo-img-2 {
-        animation: float 4.2s ease-in infinite;
+        animation: float 6.2s ease-in infinite;
+        padding-left: 10%;
+        padding-right: 0%;
     }
 
     #skill-logo-img-3 {
-        animation: float 4.1s ease-out infinite;
+        animation: float 6.1s ease-out infinite;
+        padding-left: 0%;
+        padding-right: 10%;
     }
 
     #skill-logo-img-4 {
-        animation: float 4.5s ease-out infinite;
+        animation: float 6.5s ease-out infinite;
+        padding-left: 10%;
+        padding-right: 0%;
     }
 
     #skill-logo-img-5 {
-        animation: float 4s ease-in infinite;
+        animation: float 6s ease-in infinite;
+        padding-left: 0%;
+        padding-right: 10%;
     }
 
     #skill-logo-img-6 {
-        animation: float 4.2s ease-out infinite;
+        animation: float 6.2s ease-out infinite;
+        padding-left: 10%;
+        padding-right: 0%;
     }
 
     @keyframes float{
