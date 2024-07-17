@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: #eafcfc;
 }
 
 html {
@@ -32,8 +32,12 @@ body {
 }
 
 nav {
-    color: white;
+    color: #eafcfc;
     text-shadow: 2px 2px #000000;
+}
+
+#ul-nav {
+    width: 100%;
 }
 
     .cur-page {
@@ -43,7 +47,7 @@ nav {
 .banner-content {
     margin-top: 50px;
     width: 100%;
-    color: white;
+    color: #eafcfc;
     text-shadow: 2px 2px #000000;
     
 }
@@ -134,11 +138,15 @@ nav {
 #sect-about {
     
 }
+
+    #about-text {
+        width: 50%;
+    }
     
     #about-text p{
         font-size: calc(1em + .5vw);
-        width: 80%;
         backdrop-filter: blur(4px);
+        width: 80%;
     }
     
     #main-logo-img {
@@ -147,8 +155,94 @@ nav {
     }
 
 
+/* ticker CSS yoinked from: https://codepen.io/lewismcarey/pen/GJZVoG */
+            * { box-sizing: border-box; }
+
+            @-webkit-keyframes ticker {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                visibility: visible;
+            }
+
+            100% {
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+            }
+            }
+
+            @keyframes ticker {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                visibility: visible;
+            }
+
+            100% {
+                -webkit-transform: translate3d(-200%, 0, 0);
+                transform: translate3d(-140%, 0, 0);
+            }
+            }
+
+            .ticker-wrap {
+            position: relative;
+            bottom: 0;
+            overflow: hidden;
+            height: 4rem;
+            padding-left: 100%;
+            box-sizing: content-box;
+
+            .ticker {
+                display: inline-block;
+                height: 4rem;
+                line-height: 4rem;  
+                white-space: nowrap;
+                padding-right: 100%;
+                box-sizing: content-box;
+                -webkit-animation-iteration-count: infinite; 
+                        animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                        animation-timing-function: linear;
+            -webkit-animation-name: ticker;
+                    animation-name: ticker;
+                -webkit-animation-duration: 40s;
+                        animation-duration: 40s;
+            }
+            }
+
+            .ticker__item {
+                display: inline-block;
+                padding: 0 1rem;
+            }
+
+            .ticker-wrap {
+                border-radius: 25px;
+                border: 2px solid cornflowerblue;
+                filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+                backdrop-filter: blur(4px);
+            }
+
+            .ticker-text {
+                color: gray;
+                font-family: "Libre Barcode 128 Text";
+                font-size: 200%;
+            }
+/* end of ticker css */
 
     @media screen and (max-width: 600px) {
+        #ul-nav {
+            padding-top: 5%;
+            padding-left: 10%;
+        }
+
+        #div-nav-brand {
+            display: none;
+        }
+
+        .banner-content {
+            margin: 2.5em;
+        }
+
         #header-text {
             display: none;
         }
@@ -173,5 +267,6 @@ nav {
             justify-content: center !important;
             padding-bottom: 2.5em;
             padding-top: 2em;
+            width: 75%;
         }
     }

@@ -11,26 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <canvas id="canvas1"></canvas>
   <section id="sect-banner">
-    <nav class="navbar navbar-expand-lg align-self-start col-12">
+    <nav class="row navbar navbar-expand-lg align-self-start col-12">
       <div class="col-2 d-flex justify-content-center">
-        <div class="container-fluid">
+        <div id="div-nav-brand" class="container-fluid">
           <div class="row">
             <p class="navbar-brand d-flex justify-content-center mb-0 pb-0 text-white">Luke Gosnell</p>
           </div>
           <div class="row">
             <p class="d-flex justify-content-center mt-0 pt-0">Web Dev / QA</p>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="col-6 collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul id="ul-nav" class="navbar-nav mr-auto justify-content-around">
           <li class="nav-item active">
             <a class="nav-link text-white cur-page" href="#">Home</a>
           </li>
@@ -54,6 +57,15 @@
             <a class="nav-link text-white" href="#">Contact</a>
           </li>
         </ul>
+      </div>
+      <div id="div-ticker" class="col-4">
+        <div class="ticker-wrap">
+          <div class="ticker">
+            <div class="ticker__item"><p class="ticker-text">welcome to my website_</p></div>
+            <div class="ticker__item"><p class="ticker-text">please take a look around...</p></div>
+            <div class="ticker__item"><p class="ticker-text">current technologies of interest: generative ai, react.js, tailwind.css</p></div>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="banner-content d-flex justify-content-center align-items-center">
@@ -103,11 +115,11 @@
       </div>
     </div>
   </section>
-  <section id="sect-about" class="d-flex align-items-center">
+  <section id="sect-about" class="d-flex align-items-center justify-content-center">
     <div id="about-text" class="col-8 d-flex justify-content-center">
       <p>At Ranken Technical College, I maintained excellent work ethic and a 4.0 GPA, graduating with honors and with Summa Cum Laude in 2020. Since then, I've continued expanding my skillset with several personal and freelance projects all the while working full-time as a quality assurance lead for Financial Network Inc. in St. Louis, MO.</p>
     </div>
-    <div id="div-main-logo" class="col-4 d-flex justify-content-start">
+    <div id="div-main-logo" class="col-4 d-flex justify-content-center">
       <img src="./images/lg-logo-transparent.png" alt="logo" id="main-logo-img">
     </div>
   </section>
