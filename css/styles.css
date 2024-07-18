@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +39,8 @@ body {
     font-family: Oxygen;
 }
 
+/* NAVIGATION */
+
 #div-navbar {
     padding-left: 3.5rem;
 }
@@ -55,9 +59,85 @@ nav {
     width: 100%;
 }
 
-    .cur-page {
-        color: cornflowerblue !important;
-    }
+.cur-page {
+    color: cornflowerblue !important;
+}
+
+/* TICKER */
+/* yoinked from: https://codepen.io/lewismcarey/pen/GJZVoG */
+* { box-sizing: border-box; }
+
+@-webkit-keyframes ticker {
+0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+}
+
+@keyframes ticker {
+0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+100% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-140%, 0, 0);
+}
+}
+
+.ticker-wrap {
+position: relative;
+bottom: 0;
+overflow: hidden;
+height: 4rem;
+padding-left: 100%;
+box-sizing: content-box;
+
+.ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+            animation-name: ticker;
+    -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+}
+}
+
+.ticker__item {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.ticker-wrap {
+    border-radius: 25px;
+    border: 2px solid cornflowerblue;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+    backdrop-filter: blur(4px);
+}
+
+.ticker-text {
+    color: gray;
+    font-family: "Libre Barcode 128 Text";
+    font-size: 200%;
+}
+
+/* BANNER */
 
 .banner-content {
     margin-top: 50px;
@@ -67,229 +147,156 @@ nav {
     
 }
 
-    #headshot {
-        backdrop-filter: blur(0px);
-    }
+#headshot {
+    backdrop-filter: blur(0px);
+}
 
-    #banner-text-items {
-        backdrop-filter: blur(4px);
-        width: 75%;
-    }
+#banner-text-items {
+    backdrop-filter: blur(4px);
+    width: 75%;
+}
 
-    #headshot-img {
-        border-radius: 50px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        max-width: 50%;
-        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-    }
+#headshot-img {
+    border-radius: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 50%;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+}
 
-    .banner-logo a {
-        /* a larger than img -- needs fix */
-    }
+#a-github {
+    padding-left: 70%;
+}
 
-    .banner-logo-img {
-        max-width: 30%;
-        padding-left: 5%;
-        padding-right: 5%;
-        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-        transition: transform .5s;
-    }
+#a-linkedin {
+    padding-right: 70%;
+}
 
-    .banner-logo-img:hover {
-        transform: scale(1.1);
-    }
+.banner-logo-img {
+    max-width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+    transition: transform .5s;
+}
 
-    #header p {
-        padding-top: 5%;
-        font-size: calc(1em + 2.5vw);
-    }
+.banner-logo-img:hover {
+    transform: scale(1.1);
+}
 
-    #sub-header p {
-        color: cornflowerblue;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
-        font-size: calc(1em + .5vw);
-    }
+#header p {
+    padding-top: 5%;
+    font-size: calc(1em + 2.5vw);
+}
 
-    #header-text {
-        /* width: 75%; */
-    }
+#sub-header p {
+    color: cornflowerblue;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+    font-size: calc(1em + .5vw);
+}
 
-    #mobile-header-text {
-        display: none;
-    }
+#mobile-header-text {
+    display: none;
+}
 
-    #mobile-header-text p {
-        width: 80%;
-        font-size: calc(1em + .5vw);
-    }
+#mobile-header-text p {
+    width: 80%;
+    font-size: calc(1em + .5vw);
+}
 
-    #header-text p {
-        font-size: calc(1em + .5vw);
-    }
+#header-text p {
+    font-size: calc(1em + .5vw);
+}
+
+/* LOGOS */
 
 #sect-logos {
     padding-top: 8%;
 }
 
-    .skill-logo-img{
-        padding-bottom: 8%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width: 5.5em;
-        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-    }
-
-    .float-logo-1 {
-        animation: float 4s ease-out infinite;
-    }
-
-    .float-logo-2 {
-        animation: float 4.5s ease-out infinite;
-    }
-
-    @keyframes float{
-        50% {
-            transform: translateY(10px);
-        }
-    }
-
-#sect-about {
-    
+.skill-logo-img{
+    padding-bottom: 8%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 5.5em;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
 }
 
+.float-logo-1 {
+    animation: float 4s ease-out infinite;
+}
+
+.float-logo-2 {
+    animation: float 4.5s ease-out infinite;
+}
+
+@keyframes float{
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* ABOUT */
+
+#about-text {
+    width: 50%;
+}
+
+#about-text p{
+    font-size: calc(1em + .5vw);
+    backdrop-filter: blur(4px);
+    width: 80%;
+}
+
+#main-logo-img {
+    width: 50%;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    #ul-nav {
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+
+    #div-nav-brand {
+        display: none;
+    }
+
+    #div-ticker {
+        display: none;
+    }
+
+    .banner-content {
+        margin-top: 0;
+    }
+
+    #header-text {
+        display: none;
+    }
+
+    #mobile-header-text {
+        display: flex;
+    }
+
+    .skill-logo-img {
+        width: 3em;
+    }
+
+    #sect-about {
+        flex-direction: column-reverse !important;
+    }
+
     #about-text {
-        width: 50%;
-    }
-    
-    #about-text p{
-        font-size: calc(1em + .5vw);
-        backdrop-filter: blur(4px);
-        width: 80%;
-    }
-    
-    #main-logo-img {
-        width: 50%;
-        filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+        width: 100% !important;
     }
 
-
-/* ticker CSS yoinked from: https://codepen.io/lewismcarey/pen/GJZVoG */
-            * { box-sizing: border-box; }
-
-            @-webkit-keyframes ticker {
-            0% {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-                visibility: visible;
-            }
-
-            100% {
-                -webkit-transform: translate3d(-100%, 0, 0);
-                transform: translate3d(-100%, 0, 0);
-            }
-            }
-
-            @keyframes ticker {
-            0% {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-                visibility: visible;
-            }
-
-            100% {
-                -webkit-transform: translate3d(-200%, 0, 0);
-                transform: translate3d(-140%, 0, 0);
-            }
-            }
-
-            .ticker-wrap {
-            position: relative;
-            bottom: 0;
-            overflow: hidden;
-            height: 4rem;
-            padding-left: 100%;
-            box-sizing: content-box;
-
-            .ticker {
-                display: inline-block;
-                height: 4rem;
-                line-height: 4rem;  
-                white-space: nowrap;
-                padding-right: 100%;
-                box-sizing: content-box;
-                -webkit-animation-iteration-count: infinite; 
-                        animation-iteration-count: infinite;
-                -webkit-animation-timing-function: linear;
-                        animation-timing-function: linear;
-                -webkit-animation-name: ticker;
-                        animation-name: ticker;
-                -webkit-animation-duration: 40s;
-                        animation-duration: 40s;
-            }
-            }
-
-            .ticker__item {
-                display: inline-block;
-                padding: 0 1rem;
-            }
-
-            .ticker-wrap {
-                border-radius: 25px;
-                border: 2px solid cornflowerblue;
-                filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-                backdrop-filter: blur(4px);
-            }
-
-            .ticker-text {
-                color: gray;
-                font-family: "Libre Barcode 128 Text";
-                font-size: 200%;
-            }
-/* end of ticker css */
-
-    @media screen and (max-width: 600px) {
-        #ul-nav {
-            padding-top: 5%;
-            padding-left: 10%;
-        }
-
-        #div-nav-brand {
-            display: none;
-        }
-
-        #div-ticker {
-            display: none;
-        }
-
-        .banner-content {
-            margin-top: 0;
-        }
-
-        #header-text {
-            display: none;
-        }
-
-        #mobile-header-text {
-            display: flex;
-        }
-
-        .skill-logo-img {
-            width: 3em;
-        }
-
-        #sect-about {
-            flex-direction: column-reverse !important;
-        }
-
-        #about-text {
-            width: 100% !important;
-        }
-
-        #div-main-logo {
-            justify-content: center !important;
-            padding-bottom: 2.5em;
-            padding-top: 2em;
-            width: 75%;
-        }
+    #div-main-logo {
+        justify-content: center !important;
+        padding-bottom: 2.5em;
+        padding-top: 2em;
+        width: 75%;
     }
+}
