@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     color: #eafcfc;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
@@ -31,9 +37,18 @@ body {
     font-family: Oxygen;
 }
 
+#div-navbar {
+    padding-left: 3.5rem;
+}
+
 nav {
     color: #eafcfc;
     text-shadow: 2px 2px #000000;
+}
+
+.nav-item a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #ul-nav {
@@ -69,6 +84,10 @@ nav {
         filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
     }
 
+    .banner-logo a {
+        /* a larger than img -- needs fix */
+    }
+
     .banner-logo-img {
         max-width: 30%;
         padding-left: 5%;
@@ -78,7 +97,7 @@ nav {
     }
 
     .banner-logo-img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     #header p {
@@ -203,8 +222,8 @@ nav {
                         animation-iteration-count: infinite;
                 -webkit-animation-timing-function: linear;
                         animation-timing-function: linear;
-            -webkit-animation-name: ticker;
-                    animation-name: ticker;
+                -webkit-animation-name: ticker;
+                        animation-name: ticker;
                 -webkit-animation-duration: 40s;
                         animation-duration: 40s;
             }
@@ -239,8 +258,12 @@ nav {
             display: none;
         }
 
+        #div-ticker {
+            display: none;
+        }
+
         .banner-content {
-            margin: 2.5em;
+            margin-top: 0;
         }
 
         #header-text {

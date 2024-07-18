@@ -19,7 +19,7 @@
   <canvas id="canvas1"></canvas>
   <section id="sect-banner">
     <nav class="row navbar navbar-expand-lg align-self-start col-12">
-      <div class="col-2 d-flex justify-content-center">
+      <div id="div-navbar" class="col-2 d-flex justify-content-center">
         <div id="div-nav-brand" class="container-fluid">
           <div class="row">
             <p class="navbar-brand d-flex justify-content-center mb-0 pb-0 text-white">Luke Gosnell</p>
@@ -35,7 +35,7 @@
       <div class="col-6 collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul id="ul-nav" class="navbar-nav mr-auto justify-content-around">
           <li class="nav-item active">
-            <a class="nav-link text-white cur-page" href="#">Home</a>
+            <a class="nav-link cur-page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,12 +75,16 @@
             <img id="headshot-img" src="./images/me.png" alt="me">
           </div>
           <div class="row justify-content-center pt-2">
-            <a class="banner-logo col p-0 d-flex justify-content-end" href="https://github.com/lukegosnellranken" target="_blank">
-              <img class="banner-logo-img" src="./images/github-logo-blue.png" alt="">
-            </a>
-            <a class="banner-logo col p-0 d-flex justify-content-start" href="https://www.linkedin.com/in/lukegosnell" target="_blank">
-              <img class="banner-logo-img" src="./images/linkedin-logo-blue.png" alt="">
-            </a>
+            <div class="banner-logo col p-0">
+              <a class="d-flex justify-content-end" href="https://github.com/lukegosnellranken" target="_blank">
+                <img class="banner-logo-img" src="./images/github-logo-blue.png" alt="">
+              </a>
+            </div>
+            <div class="banner-logo col p-0">
+              <a class="d-flex justify-content-start" href="https://www.linkedin.com/in/lukegosnell" target="_blank">
+                <img class="banner-logo-img" src="./images/linkedin-logo-blue.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
         <div id="banner-text" class="d-flex justify-content-start flex-column col-7">
@@ -100,7 +104,7 @@
       </div>
     </section>
     <div id="mobile-header-text" class="justify-content-center pt-4">
-      <p>TEST As an experienced developer with a robust professional background and a portfolio of successful freelance and personal projects, I am deeply passionate about full-stack development. I eagerly seek out new opportunities to expand my skill set and contribute to innovative solutions.</p>
+      <p>As an experienced developer with a robust professional background and a portfolio of successful freelance and personal projects, I am deeply passionate about full-stack development. I eagerly seek out new opportunities to expand my skill set and contribute to innovative solutions.</p>
     </div>
   </section>
   <section id="sect-logos">
@@ -123,7 +127,6 @@
       <img src="./images/lg-logo-transparent.png" alt="logo" id="main-logo-img">
     </div>
   </section>
-  <p>bootstrap</p>
   <script src="./js/script.js"></script>
 </body>
 </html>
