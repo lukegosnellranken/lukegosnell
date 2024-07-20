@@ -1,3 +1,7 @@
+/* COLOR PALLETE - WHITE: #eafcfc */
+/* COLOR PALLETE - BLUE: cornflowerblue */
+/* COLOR PALLETE - DROP-SHADOW: rgba(212, 208, 205, 0.4) */
+
 /* GENERAL */
 
 * {
@@ -251,6 +255,137 @@ box-sizing: content-box;
 #main-logo-img {
     width: 50%;
     filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+}
+
+/* BUTTONS */
+#sect-buttons {
+    padding-top: 8%;
+}
+
+#div-window {
+    backdrop-filter: blur(4px);
+    border: #000000;
+    border-style: ridge;
+    width: 80%;
+}
+
+#div-buttons {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* width: 80%; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#p-option-select {
+    font-family: "Press Start 2P";
+}
+
+.blink {
+    font-family: "Press Start 2P";
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+
+.btn-bottom {
+    margin-top: 1.5rem !important;
+}
+
+/* below button code yoinked from: https://codepen.io/vbach17/pen/ZEdWvPd */
+
+.btn-buttons {
+    background-color: cornflowerblue;
+    border-radius: 50px;
+    color: #eafcfc;
+    filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
+    line-height: 1;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 25px;
+    font-family: "Bungee";
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    min-width: 200px;
+    text-align: center;
+}
+
+.btn-buttons:hover,
+.btn-buttons:focus {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes wobble {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes wobble {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* CONTACT */
+
+#sect-contact {
+    padding-top: 8%;
 }
 
 /* MEDIA QUERIES */
