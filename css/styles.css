@@ -287,9 +287,9 @@ box-sizing: content-box;
 }
   
 @keyframes blinker {
-50% {
-    opacity: 0;
-}
+    50% {
+        opacity: 0;
+    }
 }
 
 .btn-bottom {
@@ -309,12 +309,16 @@ box-sizing: content-box;
     margin-right: 0;
     padding: 20px 25px;
     font-family: "Bungee";
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    min-width: 200px;
+    /* min-width: 200px; */
+    width: 80%;
     text-align: center;
+    white-space: nowrap;
+    font-family: "Press Start 2P";
+    font-size: medium;
 }
 
 .btn-buttons:hover,
