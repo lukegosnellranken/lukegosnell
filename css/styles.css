@@ -273,6 +273,7 @@ box-sizing: content-box;
 
 #mini-robo {
     max-width: 36px;
+    width: 7%;
     padding-left: 5px;
     padding-top: 5px;
 }
@@ -292,13 +293,13 @@ box-sizing: content-box;
 #div-buttons {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* width: 80%; */
     padding-left: 4rem;
     padding-right: 4rem;
 }
 
 #p-option-select {
     font-family: "Press Start 2P";
+    font-size: 90%;
 }
 
 .blink {
@@ -322,13 +323,16 @@ box-sizing: content-box;
     background-color: rgb(28, 28, 28);
     color: #eafcfc;
     filter: drop-shadow(1px 1px 5px rgba(212, 208, 205, 0.4));
-    padding: 20px 25px;
+    padding-top: 4%;
+    padding-bottom: 4%;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     width: 80%;
     text-align: center;
     white-space: nowrap;
+    overflow: hidden;
+    min-width: 200px;
     font-family: "Press Start 2P";
     font-size: 75%;
     border: #000000;
@@ -406,7 +410,58 @@ box-sizing: content-box;
     padding-top: 8%;
 }
 
+/* FOOTER */
+footer {
+    font-family: Oxygen;
+    backdrop-filter: blur(4px);
+    font-size: 80%;
+}
+
+footer p {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+    #p-option-select, .blink {
+        font-size: 70%;
+    }
+    
+    .btn-buttons {
+        min-width: 160px;
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .btn-buttons {
+        min-width: 130px;
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #div-window-header {
+        width: 90%;
+    }
+
+    #div-window-border {
+        width: 90%;
+    }
+
+    #div-buttons {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
 @media screen and (max-width: 600px) {
     #ul-nav {
@@ -451,5 +506,29 @@ box-sizing: content-box;
         padding-bottom: 2.5em;
         padding-top: 2em;
         width: 75%;
+    }
+
+    #p-option-select, .blink {
+        font-size: 60%;
+    }
+
+    .btn-buttons {
+        font-size: 50%;
+        width: 100%;
+    }
+
+    footer {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .btn-buttons {
+        min-width: 100px;
+        font-size: 40%;
+    }
+
+    #mini-robo {
+        padding-top: 0;
     }
 }
