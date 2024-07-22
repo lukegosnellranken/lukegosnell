@@ -218,6 +218,10 @@ box-sizing: content-box;
     padding-top: 8%;
 }
 
+.div-skill-logos {
+    
+}
+
 .skill-logo-img{
     padding-bottom: 8%;
     margin-left: 2.5%;
@@ -429,6 +433,10 @@ footer p {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
+    .skill-logo-img {
+        width: 4em;
+    }
+
     #p-option-select, .blink {
         font-size: 70%;
     }
@@ -490,7 +498,7 @@ footer p {
     }
 
     .skill-logo-img {
-        width: 3em;
+        width: 3.5em;
     }
 
     #sect-about {
@@ -515,6 +523,10 @@ footer p {
     .btn-buttons {
         font-size: 50%;
         width: 100%;
+    }
+
+    #div-buttons {
+        padding-top: .5rem;
     }
 
     footer {
