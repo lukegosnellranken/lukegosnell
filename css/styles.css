@@ -462,6 +462,10 @@ footer p {
         padding-top: 2%;
     }
 
+    .banner-content {
+        margin-top: 0;
+    }
+
     .skill-logo-img {
         width: 4em;
     }
@@ -501,10 +505,6 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-    .banner-content {
-        margin-top: 0;
-    }
-
     #header-text {
         display: none;
     }
