@@ -219,7 +219,7 @@ box-sizing: content-box;
 }
 
 .div-skill-logos {
-    
+
 }
 
 .skill-logo-img{
@@ -431,8 +431,37 @@ footer p {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 990px) {
+    #div-nav-brand {
+        display: none;
+    }
+
+    #div-ticker {
+        display: none;
+    }
+
+    .ul-nav{
+        justify-content: center !important;
+    }
+
+    .nav-link{
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    #navbarSupportedContent {
+        margin-top: 2%;
+        backdrop-filter: blur(4px);
+        border-top: 2px #292929 ridge;
+        border-bottom: 2px #292929 ridge;
+    }
+}
 
 @media screen and (max-width: 900px) {
+    #div-navbar {
+        padding-top: 2%;
+    }
+
     .skill-logo-img {
         width: 4em;
     }
@@ -472,19 +501,6 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-    #ul-nav {
-        padding-top: 5%;
-        padding-left: 10%;
-    }
-
-    #div-nav-brand {
-        display: none;
-    }
-
-    #div-ticker {
-        display: none;
-    }
-
     .banner-content {
         margin-top: 0;
     }
