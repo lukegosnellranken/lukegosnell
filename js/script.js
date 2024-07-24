@@ -1,5 +1,5 @@
 // Get current year
-document.getElementById("year").innerHTML = document.getElementById("year").innerHTML + new Date().getFullYear();
+document.getElementById("year").innerHTML =  new Date().getFullYear() + " " + document.getElementById("year").innerHTML;
 
 // https://www.youtube.com/watch?v=d620nV6bp0A
 
