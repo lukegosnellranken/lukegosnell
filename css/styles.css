@@ -59,6 +59,14 @@ nav {
     transform: scale(1.2);
 }
 
+.dropdown-item:hover {
+    background-color: rgba(212, 208, 205, 0);
+}
+
+.dropdown-toggle::after {
+    margin-top: .7rem;
+}
+
 #ul-nav {
     width: 100%;
 }
