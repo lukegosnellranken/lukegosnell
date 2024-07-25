@@ -1,0 +1,93 @@
+ungoogledextensions
+Ungoogled Extensions is a simple website I created to help Chromium users easily download browser extensions. It has currently helped over 500 site visitors. Click here to see the code.
+skills utilized
+HTML
+CSS
+JavaScript
+JQuery
+JSON Parsing
+Image manipulation
+Deploying to AWS via Amplify with Github code
+
+St. Charles County Veterans Museum
+I have volunteered to recreate the website for the St. Charles County Veterans Museum.
+
+I took a 27-hour online course so I could learn how to better rebuild this website from the ground up in WordPress using PHP. I have created my own WordPress theme, as opposed to using a custom theme like I have with my previous projects.
+
+I have designed both the front and back ends and have created custom post types so that I can walk the museum owner through how to easily create, edit, or delete news, events, veteran stories, etc. The JSON data from these posts are then displayed and archived automatically through PHP.
+
+I have also used the combined powers of JavaScript and PHP to create a “Veterans Search,” which can be used anywhere on the website. Click the magnifying glass at the top of the page to try it out.
+
+The next step is to create an Android application, which will work in conjunction with the website. It will pull information about veterans and their stories from a database via QR code scanner.
+
+skills utilized
+Full-stack development
+WordPress
+PHP
+JavaScipt
+JQuery
+JSON
+HTML
+CSS
+MySQL
+Git version control
+Creating custom themes
+Creating custom queries
+Creating custom post-types
+User permissions
+Working on a local server
+Website deployment
+WordPress site migration
+Image editing
+Face to face meetings with client
+Keeping client updated regularly
+Transferring and renewing expired domains
+
+Serpro Logistics
+I created this site to replace Serpro Logistic’s outdated website. The site is 100% complete, but unfortunately, it’s down for the time being. I’ve not been updated when the site will be put back online.
+skills utilized
+WordPress
+HTML
+CSS
+Working on a local server
+Image manipulation
+Face to face meetings with client
+Keeping client updated regularly
+
+Missouri Grassfed Meats
+MissouriGrassFedMeats.com is a single page website I created for a local business in Warrenton, MO. It was my first time utilizing WordPress for a client.
+
+The current domain is expired, but I have preserved the site in AWS, only needing to redo the styling.
+skills utilized
+WordPress
+HTML
+CSS
+Working on a local server
+Website deployment
+Image manipulation
+Face to face meetings with client
+Keeping client updated regularly
+Transferring and renewing expired domains
+Hosting on AWS
+Reverse-engineering site layout and styling
+
+leavemeathome
+Every student in my first semester class at Ranken was tasked with creating a site for a friend of my professor’s petsitting service. The best site would be chosen by the client for deployment. My site was chosen. It is basic and has a few hiccups, but I’ve grown as a web designer since. Please see my other examples.
+skills utilized
+HTML
+CSS
+Image manipulation
+Bootstrap
+
+Luke's Bike Emporium
+A fictional bike shop I created utilizing some base code from my professor at Ranken. All the styling is done by me from scratch. I created this to learn the MVC framework and to develop my database skills, as well as my web design skills.
+
+The shop page pulls images and data from a database and displays it in a professional manner. The user can add items from the database into their cart and check out after registering for an account. The account controller has a habit of running into several problems when logging in as a user. I hope to rectify this in the future. The contact page validates many fields and accepts a message to send to a potential business owner.
+ASP.NET MVC
+C#
+Razor
+SQL
+Bootstrap
+HTML
+CSS
+Image editing
