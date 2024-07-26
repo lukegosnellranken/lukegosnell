@@ -1,4 +1,8 @@
 /* MAIN CONTENT */
+#sect-content {
+  padding-top: 4rem;
+}
+
 .div-gallery-item-content {
   border: 1px solid #ccc;
   backdrop-filter: blur(4px);

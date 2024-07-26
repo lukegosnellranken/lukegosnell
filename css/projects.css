@@ -1,4 +1,8 @@
 /* MAIN CONTENT */
+#sect-content {
+    padding-top: 4rem;
+}  
+
 .accordion {
     width: 80%;
     --bs-accordion-active-bg: cornflowerblue;

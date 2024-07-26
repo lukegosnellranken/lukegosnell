@@ -1,3 +1,8 @@
+/* GENERAL */
+a {
+  color: gray;
+}
+
 /* MAIN CONTENT */
 .div-container {
     padding-top: 4rem;
@@ -29,6 +34,15 @@
     padding-left: 4rem;
 }
 
+.project-header {
+  padding-bottom: 0 !important;
+}
+
+.project-sub {
+  font-size: 80%;
+  color: gray;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 990px) {
     
@@ -42,6 +56,19 @@
   .div-container-v2 {
     flex-direction: column;
   }
+
+  .project-img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .p-project-text {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -53,7 +80,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    
+    .project-img {
+      width: 80%;
+    }
 }
 
 @media screen and (max-width: 460px) {
