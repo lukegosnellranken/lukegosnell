@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Gosnell | Websites</title>
+    <title>Luke Gosnell | Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/websites.css" rel="stylesheet">
+    <link href="./css/projects.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon3.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +43,8 @@
               Portfolio
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item d-flex justify-content-center cur-page" href="#">My Websites</a></li>
-              <li><a class="dropdown-item d-flex justify-content-center" href="projects.html">Misc. Projects</a></li>
+              <li><a class="dropdown-item d-flex justify-content-center" href="websites.html">My Websites</a></li>
+              <li><a class="dropdown-item d-flex justify-content-center cur-page" href="#">Misc. Projects</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -70,59 +70,53 @@
     </nav>
   </section>
   <section id="sect-content m-0">
-    <p>
-        All sites which have become unavailable have been preserved on EC2 instances in AWS (currently down due to costs).
-        Please contact me in order to see any site below live.
-        Missing: lukegosnell (old), gingernook, sootfall
-    </p>
-    <div class="div-container div-container-v1 row d-flex align-items-center justify-content-center m-0" id="content-1">
-        <div class="project-text col-5 d-flex flex-column">
-            <h2 class="h2-project-text p-5">Ungoogled Extensions</h2>
-            <p class="p-project-text p-5">Code | Live Demo</p>
-            <p class="p-project-text p-5">
-                A simple site I built to help Chromium users easily download browser extensions.
-                It currently handles 500+ requests per week from its many visitors.
-            </p>
+    <div class="div-accordion">
+      <div class="div-accordion-content d-flex flex-column align-items-center">
+        <h2 class="h2-accordion-header">JavaScript (ES6+, AJAX,  JQuery, etc.)</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                WeatherJS
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body row d-flex">
+                <div class="div-accordion-img col-6 d-flex justify-content-center">
+                  <img src="./images/projects/weatherjs.png" alt="weather-js">
+                </div>
+                <div class="div-accordion-text col-6 d-flex justify-content-center align-items-center">
+                  <p>A web app for telling weather made with pure JavaScript. Bootstrap is used for the UI. The user can enter a location and the program gets its weather from the OpenWeatherMap API. The entered values are written to local storage so the user can refresh the page without having to enter a location again.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project-img project-img-v1 col-7">
-            <img src="./images/my-websites/ungoogledExtensions-medium.png" alt="ungoogled-extensions">
-        </div>
-    </div>
-    <div class="div-container div-container-v2 row d-flex align-items-center justify-content-center m-0" id="content-2">
-        <div class="project-img project-img-v2 col-7">
-            <img src="./images/my-websites/vet-3.png" alt="veterans-museum">
-        </div>
-        <div class="project-text col-5 d-flex flex-column">
-            <h2 class="h2-project-text p-5">St. Charles Veterans Museum</h2>
-            <p class="p-project-text p-5">
-                After taking a 27-hour online course over building custom themes for WordPress, I voluntarily built a new website for the St. Charles County Veterans Museum. Using my knowledge of the WordPress process, along with writing custom PHP, I created a brand new WordPress theme, as opposed to using a custom theme like I had done for my previous projects.
-                I designed both the front and back ends of this site, utilizing my own custom post types so that I could showcase to the museum owner how to easily create, edit, or delete news, events, and veteran stories. The JSON data from these posts are then displayed and archived automatically through PHP.
-                Additionally, I utilized both JavaScript and PHP to create a “Veterans Search,” which can be used anywhere on the site.
-                I also designed an Android app, which would have worked in conjunction with the website, pulling information about veterans and their stories from a database via scanning QR codes.
-            </p>
-        </div>
-    </div>
-    <div class="div-container div-container-v1 row d-flex align-items-center justify-content-center m-0" id="content-1">
-        <div class="project-text col-5 d-flex flex-column">
-            <h2 class="h2-project-text p-5">Serpro Logistics</h2>
-            <p class="p-project-text p-5">
-                I was contracted to build a new site for a local tracking company to replace their outdated one.
-            </p>
-        </div>
-        <div class="project-img project-img-v1 col-7">
-            <img src="./images/my-websites/serpro-3.png" alt="serpro-logistics">
-        </div>
-    </div>
-    <div class="div-container div-container-v2 row d-flex align-items-center justify-content-center m-0" id="content-2">
-        <div class="project-img project-img-v2 col-7">
-            <img src="./images/my-websites/MGFM-3.png" alt="MGFM">
-        </div>
-        <div class="project-text col-5 d-flex flex-column">
-            <h2 class="h2-project-text p-5">Missouri Grassfed Meats</h2>
-            <p class="p-project-text p-5">
-                A single page website I created for a local business in Warrenton, MO. utilizing a purchased WordPress theme.
-            </p>
-        </div>
+      </div>
     </div>
   </section>
   <footer class="d-flex justify-content-evenly">

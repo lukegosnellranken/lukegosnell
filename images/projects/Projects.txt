@@ -1,0 +1,90 @@
+	JavaScript (ES6+, AJAX,  JQuery, etc.)
+Click here to see the code for WeatherJS.
+A web app for telling weather made with pure JavaScript. Bootstrap is used for the UI. The user can enter a location and the program gets its weather from the OpenWeatherMap API. The entered values are written to local storage so the user can refresh the page without having to enter a location again.
+	
+MicroPosts
+Click here to see the code for MicroPosts.
+A web app that allows a user to create, read, update, and delete text posts. Webpack is used for module bundling and Babel is used for converting ES6+ code to earlier versions for older browsers. Posts are stored on a “fake” API with json-server.
+
+GithubFinder
+Click here to see the code for Github Finder.
+A web app that provides live search results for an entered username by fetching data from Github’s API. Bootstrap is used for the UI.
+
+Click here to see the code for Loan Calculator.
+A web app that uses vanilla JavaScript to calculate the user’s monthly loan payment. Bootstrap is used for the UI.
+
+Click here to see the code for User Form.
+A web app that uses vanilla JavaScript and regular expressions to validate user info.
+
+Click here to see the code for Future Value.
+A javascript program that validates several fields and calculates the future value of an investment.
+
+Click here to see the code for Accordion.
+A javascript/jQuery program that features a working accordion that displays details about a book.
+
+	C#
+Click here to see the code for ArrayFunGUI.
+A GUI application that successfully manipulates the order of numbers in an array.
+It can also grab the highest and lowest number in the array.
+The user  can even search for a specific number in the array.
+
+Click here to see the code for Employee Array Lists.
+A console program that allows the user to add employees with multiple attributes to existing arrays.
+The user can choose to have the program iterate through every employee in an individual array at any time.
+
+Click here to see the code for FlightsGUI.
+A GUI program that allows the user to search for a flight by entering predefined flight numbers or codes.
+
+Click here to see the code for Bank Accounts.
+
+A console program that asks the user to enter information for five different bank accounts.
+If the user enters an invalid name, a default value is entered instead.
+If the user enters an invalid account number, a number is randomly assigned to the object.
+The user is then able to search for a bank account by last name. Doing so brings up all the information for that account.
+
+Click here to see the code for Florence Floral Creations GUI.
+A GUI program that helps the user pick out flowers for multiple occasions.
+Selecting an event will pull up a list of flowers appropriate for it.
+After making the selection, a “Good Choice!” message appears on the screen.
+
+	Java/Android
+What's Your Zodiac?
+An app that asks the user to enter their birthday. The birthday is validated after the user taps the “ZODIAC” button. If one of the date fields is invalid, it is cleared and the focus is returned to that field.
+If the date is valid (leading zeroes are automatically added to the day and month fields as needed), the user is taken to a screen that lists the user’s zodiac sign, birthday, weekday the user was born, and the attributes of the user’s zodiac sign.
+The app has been updated to account for leap years.
+
+Click here to see the code for Guessing Game – Ranked.
+A game in which the user guesses a number between 1-100. the program then tells the user if their guess is too high or too low.
+When the user guesses correctly, they are given a rank based on their number of guesses. These ranks are also stored and displayed on the “Totals” page.
+The user can start a new game at any time.
+
+Click here to see the code for Array Opertions.
+An app that prints out 25 random numbers between 1-100 and puts them into an array. The array is then displayed.
+The user can click the “Totals” button, which takes them to a new screen which lists the sum, average, largest number, smallest number, and range of all the array elements.
+The user can also choose to sort the array numbers in either ascending or descending order, as well as print out an entirely new array at any time. The totals are then reset and recalculated.
+
+	ASP.NET MVC
+Click here to see the code for Luke’s Bike Emporium.
+A fictional bike shop I created utilizing some base code from my professor at Ranken. All the styling is done by me from scratch.
+I created this to learn the MVC framework and to develop my database skills, as well as my web design skills.
+The shop page pulls images and data from a database and displays it in a professional manner.
+The user can add items from the database into their cart and check out after registering for an account.
+The account controller has a habit of running into several problems when logging in as a user. I hope to rectify this in the future.
+The contact page validates many fields and accepts a message to send to a potential business owner.
+
+Click here to see the code for Mynyl Vinyl.
+A fictional music shop I created utilizing some base code from my professor at Ranken.
+I wrote SQL to import data from many albums.
+I wrote C# code to allow the user to search albums by genre and for the website to display data about the albums.
+I also added pagination to the lists of artists and albums.
+
+Contoso University (Code First and Database First)
+Click here to see the code for ContosoCF.
+An application I made following a tutorial to learn about Entity Framework 6 and the MVC process.
+Students and courses are loaded onto the pages and have full CRUD functionality.
+
+Click here to see the code for ContosoDBF.
+A follow-up to the Contoso Code First project.
+This program guided me in learning more about how to create and work with a database.
+It has all the functionality of the former project as well.
+

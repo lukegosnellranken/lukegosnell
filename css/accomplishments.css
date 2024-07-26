@@ -7,11 +7,6 @@
     backdrop-filter: blur(4px);
 }
 
-.p-project-text {
-    padding-top: 0 !important;
-    backdrop-filter: blur(4px);
-}
-
 .project-img img {
     width: 100%;
     border-radius: 5%;
@@ -36,7 +31,7 @@
 
 @media screen and (max-width: 900px) {
   .div-container-v1 {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .div-container-v2 {
