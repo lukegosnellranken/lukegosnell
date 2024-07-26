@@ -25,6 +25,7 @@
   padding: 0 6px;
   float: left;
   width: 24.99999%;
+  padding: 1rem;
 }
 
 .div-date {
@@ -36,16 +37,49 @@
   color: gray;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1300px) {
+  .desc p {
+    font-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .desc p {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .desc p {
+    font-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .desc p {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .div-gallery-item {
-    width: 49.99999%;
-    margin: 6px 0;
+    /* width: 50%; */
+    padding: .5rem;
+
+  }
+
+  .desc p {
+    font-size: 75%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .div-gallery-item {
     width: 100%;
+  }
+
+  .desc p {
+    font-size: 80%;
   }
 }
 
