@@ -51,7 +51,7 @@
             <a class="nav-link text-white" href="accomplishments.html">Accomplishments</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./files/resume.pdf" download="GosnellResumeAndRecommendation">Résumé</a>
+            <a class="nav-link text-white" onclick="window.open('./files/resume.pdf','_blank')" download="GosnellResumeAndRecommendation">Résumé</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Contact</a>
@@ -138,18 +138,18 @@
         </div>
         <div id="div-buttons" class="row d-flex justify-content-center">
           <div id="div-buttons-1" class="col-6 d-flex flex-column align-items-center">
-            <button class="btn-buttons btn-top">
+            <button class="btn-buttons btn-top" onclick="location.href='websites.html'" type="button">
               Websites
             </button>
-            <button class="btn-buttons btn-bottom">
+            <button class="btn-buttons btn-bottom" onclick="location.href='projects.html'" type="button">
               Misc. Projects
             </button>
           </div>
           <div id="div-buttons-2" class="col-6 d-flex flex-column align-items-center">
-            <button class="btn-buttons btn-top">
+            <button class="btn-buttons btn-top" onclick="window.open('./files/resume.pdf','_blank')" download="GosnellResumeAndRecommendation" type="button">
               Résumé
             </button>
-            <button class="btn-buttons btn-bottom">
+            <button class="btn-buttons btn-bottom" onclick="location.href='accomplishments.html'" type="button">
               Accomplishments
             </button>
           </div>
