@@ -52,6 +52,7 @@
 #header p {
     padding-top: 5%;
     font-size: calc(1em + 2.5vw);
+    min-width: 150px;
 }
 
 #sub-header p {
@@ -391,6 +392,10 @@
         max-width: 30%;
     }
 
+    #headshot div {
+        margin: 0;
+    }
+
     #a-github {
         padding-left: 50%;
     }
@@ -409,6 +414,11 @@
 
     #div-mobile-socials {
         display: flex !important;
+        margin: 0;
+    }
+
+    #banner-text-items {
+        padding-left: 5%;
     }
 
     #sect-about {
