@@ -377,6 +377,18 @@
         display: flex;
     }
 
+    .banner-logo-img {
+        max-width: 40%;
+    }
+
+    .banner-logo-img {
+      padding: 0;
+    }
+
+    #headshot-img {
+        max-width: 75%;
+    }
+
     #sect-about {
         flex-direction: column-reverse !important;
     }
