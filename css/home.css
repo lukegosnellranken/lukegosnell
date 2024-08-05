@@ -58,6 +58,7 @@
     color: cornflowerblue;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
     font-size: calc(1em + .5vw);
+    min-width: 185px;
 }
 
 #mobile-header-text {
