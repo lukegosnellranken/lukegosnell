@@ -59,6 +59,12 @@
   text-align: center;
 }
 
+.desc p {
+  text-align: center;
+  margin-bottom: 0 !important;
+  height: 38.375px !important;
+}
+
 .div-date p {
   color: gray;
 }
