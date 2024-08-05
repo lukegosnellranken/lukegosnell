@@ -4,17 +4,17 @@
 }
 
 .div-gallery-item-content {
-  border: 1px solid #ccc;
-  backdrop-filter: blur(4px);
+  /* border: 1px solid #ccc; */
 }
 
 .div-gallery-item-content:hover {
-  border: 1px solid #777;
+  transform: scale(1.1);
 }
 
 .div-gallery-item-content img {
   width: 100%;
   height: auto;
+  border-radius: 25px;
 }
 
 * {
