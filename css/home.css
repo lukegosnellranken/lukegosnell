@@ -9,7 +9,7 @@
 }
 
 #headshot {
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(4px);
 }
 
 #banner-text-items {

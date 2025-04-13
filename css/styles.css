@@ -169,6 +169,20 @@ footer p {
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 990px) {
+    body {
+        width: 65%;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    body {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 990px) {
     #div-nav-brand {
         display: none;
