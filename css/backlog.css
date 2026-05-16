@@ -10,6 +10,18 @@ a {
     
 }
 
+#div-description {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#p-description {
+    width: 80%;
+    font-size: 150%;
+    text-align: center;
+}
+
 .div-accordion {
     padding-top: 4rem;
 }
@@ -88,7 +100,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    
+    #p-description {
+        font-size: 120%;
+    }
 }
 
 @media screen and (max-width: 460px) {

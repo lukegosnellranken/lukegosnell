@@ -54,6 +54,10 @@ nav {
     text-shadow: 2px 2px #000000;
 }
 
+.nav-item a {
+    transition: transform 0.3s ease;
+}
+
 .nav-item a:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
