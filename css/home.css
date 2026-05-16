@@ -97,7 +97,7 @@
 }
 
 .skill-img img {
-    width: 25%;
+    width: 33.3%;
 }
 
 #skill-img-1 {
@@ -317,21 +317,14 @@
     }
 
     #div-grid-container {
-        grid-row: 2;
+        display: flex;
+        flex-wrap: wrap;
         row-gap: 2rem;
-        
+        justify-content: center;
     }
 
-    #skill-img-4 {
-        grid-area: 2 / 1 / span 1 / span 1;
-    }
-    
-    #skill-img-5 {
-        grid-area: 2 / 2 / span 1 / span 1;
-    }
-    
-    #skill-img-6 {
-        grid-area: 2 / 3 / span 1 / span 1;
+    .skill-img {
+        width: 33.3%;
     }
 }
 
