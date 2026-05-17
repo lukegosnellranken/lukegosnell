@@ -171,6 +171,7 @@ nav {
     margin: 0;
     line-height: 1;
     transition: color 0.2s ease;
+    white-space: nowrap
 }
 
 #mobile-contact-email:hover {
