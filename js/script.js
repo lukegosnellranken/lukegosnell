@@ -81,3 +81,51 @@ window.addEventListener('resize',
 
 init();
 animate();
+
+// Desktop Contact
+
+const contactItem = document.getElementById('contact-nav-item');
+const contactModal = document.getElementById('contact-modal');
+
+contactItem.addEventListener('mouseenter', () => {
+    contactModal.classList.add('visible');
+});
+
+contactItem.addEventListener('mouseleave', () => {
+    contactModal.classList.remove('visible');
+});
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const confirm = document.getElementById('copy-confirm');
+        const mobileConfirm = document.getElementById('mobile-copy-confirm');
+        
+        if (window.innerWidth <= 990) {
+            mobileConfirm.classList.add('show');
+            setTimeout(() => mobileConfirm.classList.remove('show'), 1500);
+        } else {
+            confirm.classList.add('show');
+            setTimeout(() => confirm.classList.remove('show'), 1500);
+        }
+    });
+}
+
+// Mobile Contact
+
+const mobileOverlay = document.getElementById('mobile-contact-overlay');
+const contactLink = document.getElementById('contact-nav-link');
+
+contactLink.addEventListener('click', (e) => {
+    if (window.innerWidth <= 990) {
+        e.preventDefault();
+        mobileOverlay.style.display = 'block';
+        setTimeout(() => mobileOverlay.classList.add('visible'), 10);
+    }
+});
+
+mobileOverlay.addEventListener('click', (e) => {
+    if (e.target === mobileOverlay) {
+        mobileOverlay.classList.remove('visible');
+        setTimeout(() => mobileOverlay.style.display = 'none', 200);
+    }
+});
