@@ -53,8 +53,17 @@
           <li class="nav-item">
             <a class="nav-link text-white" onclick="window.open('./files/resume.pdf','_blank')" download="GosnellResumeAndRecommendation">Résumé</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-white" href="mailto:lukegosnell324@gmail.com">Contact</a>
+          </li> -->
+          <li class="nav-item" id="contact-nav-item">
+            <a class="nav-link text-white" id="contact-nav-link">Contact</a>
+            <div id="contact-modal">
+              <p onclick="copyToClipboard('lukegosnell324@gmail.com')" id="contact-email">
+                📧 lukegosnell324@gmail.com
+              </p>
+              <span id="copy-confirm">Copied!</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -310,6 +319,14 @@
     <p id="year">Copyright © Luke Gosnell</p>
     <p>lukegosnell324@gmail.com</p>
   </footer>
+  <div id="mobile-contact-overlay">
+    <div id="mobile-contact-modal">
+      <p id="mobile-contact-email" onclick="copyToClipboard('lukegosnell324@gmail.com')">
+        📧 lukegosnell324@gmail.com
+      </p>
+      <span id="mobile-copy-confirm">Copied!</span>
+    </div>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 </html>
