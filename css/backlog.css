@@ -1,5 +1,5 @@
 /* GENERAL */
-a {
+.accordion-header a {
     color: gray;
     font-size: 80%;
     padding-left: 1rem;
